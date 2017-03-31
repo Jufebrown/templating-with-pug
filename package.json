@@ -1,0 +1,24 @@
+{
+  "name": "templating-with-pug",
+  "version": "1.0.0",
+  "description": "simple express server that uses pug templating",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jufebrown/templating-with-pug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jufebrown/templating-with-pug/issues"
+  },
+  "homepage": "https://github.com/Jufebrown/templating-with-pug#readme"
+}
