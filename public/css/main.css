@@ -1,0 +1,7 @@
+body {
+  margin-top: 70px;
+}
+
+.welcome__image img {
+  max-width: 80%;
+}
