@@ -4,12 +4,14 @@
   "description": "simple express server that uses pug templating",
   "main": "app.js",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "express": "^4.15.2",
     "pug": "^2.0.0-beta11"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
   },
   "repository": {
     "type": "git",
