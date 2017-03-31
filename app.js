@@ -20,6 +20,10 @@ app.get(`/inventory`, (req, res, next) => {
   res.render(`inventory`, {page: 'Inventory'})
 })
 
+app.use((req, res) => {
+  res.render(`index`, {page: 'Home'})
+})
+
 app.listen(port, () => {
   console.log(`listening on ${port}`)
 })
