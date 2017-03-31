@@ -8,13 +8,13 @@ app.use(express.static('public'))
 app.set(`view engine`, `pug`)
 
 app.get(`/`, (req, res, next) => {
-  res.render(`index`)
+  res.render(`index`, {page: 'Home'})
 })
 
 app.get(`/about`, (req, res, next) => {
-  res.render(`about`)
+  res.render(`about`, {page: 'About'})
 })
 
 app.get(`/inventory`, (req, res, next) => {
-  res.render(`inventory`)
+  res.render(`inventory`, {page: 'Inventory'})
 })
