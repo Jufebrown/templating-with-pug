@@ -8,7 +8,6 @@ app.use(express.static('public'))
 
 app.set(`view engine`, `pug`)
 
-app.locals.time = new Date()
 
 app.get(`/`, (req, res, next) => {
   res.render(`index`, {page: 'Home'})
@@ -16,6 +15,7 @@ app.get(`/`, (req, res, next) => {
 
 app.get(`/about`, (req, res, next) => {
   res.render(`about`, {page: 'About'})
+  app.locals.time = new Date()
 })
 
 app.get(`/inventory`, (req, res, next) => {
