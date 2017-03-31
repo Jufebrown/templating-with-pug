@@ -1,4 +1,5 @@
 `use strict`
+const port = process.env.PORT || 3000
 
 const express = require('express')
 const app = express()
@@ -17,4 +18,8 @@ app.get(`/about`, (req, res, next) => {
 
 app.get(`/inventory`, (req, res, next) => {
   res.render(`inventory`, {page: 'Inventory'})
+})
+
+app.listen(port, () => {
+  console.log(`listening on ${port}`)
 })
