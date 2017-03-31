@@ -8,6 +8,8 @@ app.use(express.static('public'))
 
 app.set(`view engine`, `pug`)
 
+app.locals.time = new Date()
+
 app.get(`/`, (req, res, next) => {
   res.render(`index`, {page: 'Home'})
 })
